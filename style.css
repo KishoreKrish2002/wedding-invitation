@@ -1,0 +1,108 @@
+    /* Custom font for script style and subtle ornamental styles */
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;600&display=swap');
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #fafafa;
+        color: #372f2f;
+        scroll-behavior: smooth;
+    }
+
+    .script-font {
+        font-family: 'Great Vibes', cursive;
+    }
+
+    /* Subtle floral background pattern in header */
+    header {
+        width: 100%;
+        height: 80%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    header::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c51b6ad9-c829-4027-ac9c-c9484c5328cb.png') center center / cover no-repeat;
+        height: 60%;
+    }
+
+    header::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.624);
+        z-index: 0;
+    }
+
+    header nav {
+        position: relative;
+        z-index: 10;
+    }
+
+    .countdown>div {
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #a87f7f;
+        letter-spacing: 0.1em;
+    }
+
+    .countdown>span {
+        font-weight: 300;
+        font-size: 0.9rem;
+        color: #7c6f6f;
+        letter-spacing: 0.12em;
+    }
+
+    /* Card shadows and border radius */
+    .card {
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(196, 179, 179, 0.35);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(196, 179, 179, 0.5);
+    }
+
+    .icon-container i{
+        cursor: pointer;
+    }
+
+    /* Scrollbar hidden for horizontal galleries */
+    .img-gallery::-webkit-scrollbar {
+        display: none;
+    }
+
+    .img-gallery {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    /* map styles */
+    .gmap-container{
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+        padding: 1%;
+    }
+
+    .footer-link:hover {
+        color: #a87f7f;
+        transition: color 0.3s ease;
+    }
+
+    @media (min-width: 640px) {
+        .countdown>div {
+            font-size: 2.25rem;
+        }
+
+        .countdown>span {
+            font-size: 1.25rem;
+        }
+    }
